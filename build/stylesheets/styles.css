@@ -1,0 +1,290 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body main header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main header article {
+  line-height: 1.75;
+}
+body main header article h2 {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+body main header nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+body main header nav ul li {
+  padding: 0 10px;
+  cursor: pointer;
+}
+body main header nav ul li:nth-child(1), body main header nav ul li:nth-child(2) {
+  border-right: solid 2px;
+}
+body main .upper-carousel-wrapper {
+  display: flex;
+  padding: 0 10vw;
+  margin: 50px 0;
+}
+body main .upper-carousel-wrapper .fixed-card {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main .upper-carousel-wrapper .fixed-card p {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+}
+body main .upper-carousel-wrapper .fixed-card button {
+  background-color: transparent;
+  border: solid 2px #644fea;
+  color: #644fea;
+  border-radius: 100px;
+  padding: 7px 28px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+body main .upper-carousel-wrapper .fixed-card button:hover {
+  background-color: #644fea;
+  border: solid 2px #644fea;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+body main .upper-carousel-wrapper .upper-carousel {
+  width: 80%;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell {
+  width: 27.5%;
+  height: 350px;
+  margin-right: 10px;
+  background: #f5f5f5;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell img {
+  width: 66%;
+  height: auto;
+  margin-bottom: 30px;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell p {
+  margin: 0;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell p:last-of-type {
+  font-weight: 100;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell button {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell:hover img {
+  width: 100%;
+  border-radius: 15px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 0;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell:hover p {
+  display: none;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell:hover button {
+  display: block;
+  background-color: #fff;
+  border: solid 2px #644fea;
+  color: #644fea;
+  border-radius: 100px;
+  padding: 7px 28px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  bottom: 15px;
+}
+body main .upper-carousel-wrapper .upper-carousel .carousel-cell:hover button:hover {
+  background-color: #644fea;
+  border: solid 2px #644fea;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+body main .buy-all-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+body main .buy-all-btn-wrapper .buy-all-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+body main .buy-all-btn-wrapper .buy-all-btn button {
+  background-color: #644fea;
+  border: solid 2px #644fea;
+  color: #fff;
+  border-radius: 100px;
+  text-transform: uppercase;
+  padding: 12px 150px;
+  font-size: 16px;
+  border: solid 5px;
+}
+body main .buy-all-btn-wrapper .buy-all-btn button:hover {
+  background-color: #fff;
+  border: solid 2px #644fea;
+  color: #644fea;
+  z-index: 9;
+  transition: all 0.2s ease-in-out;
+}
+body main .buy-all-btn-wrapper .border {
+  width: 100%;
+  height: 2px;
+  background-color: lightgray;
+  position: absolute;
+}
+body main .lower-content-wrapper {
+  display: flex;
+  padding: 0 10vw;
+  margin-bottom: 80px;
+}
+body main .lower-content-wrapper .lower-content-video,
+body main .lower-content-wrapper aside {
+  width: 50%;
+  height: 500px;
+  margin: 0 3px;
+  background: #b7afea;
+  background: linear-gradient(-15deg, #ecfee8, #c2efeb, #daa49a, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  border-radius: 15px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body main .lower-content-wrapper .lower-content-video {
+  background: url(../../src/assets/video-bkg.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+body main .lower-content-wrapper .lower-content-video .play-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 100px;
+  opacity: 0.5;
+  top: calc(50% - 25px);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body main .lower-content-wrapper .lower-content-video .play-btn span {
+  background: url(../../src/assets/play-btn.png) center center no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+body main .lower-content-wrapper .lower-content-video p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+body main .lower-content-wrapper .lower-content-video button {
+  background-color: #fff;
+  border: solid 2px #644fea;
+  color: #644fea;
+  border-radius: 100px;
+  padding: 7px 28px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 10%;
+}
+body main .lower-content-wrapper .lower-content-video button:hover {
+  background-color: #644fea;
+  border: solid 2px #644fea;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper .lower-carousel {
+  width: 100%;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper .lower-carousel .carousel-cell {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper .flickity-button {
+  background-color: transparent;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper .flickity-page-dots {
+  bottom: -70%;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper .flickity-page-dots .dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 8px;
+  background: transparent;
+  border: #333 solid 2px;
+  border-radius: 50%;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper .flickity-page-dots .dot.is-selected {
+  background-color: #333;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+body main .lower-content-wrapper .lower-carousel-wrapper-link p {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+body button {
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+}
+body .carousel-cell {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
